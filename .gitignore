@@ -1,0 +1,20 @@
+# бинарники
+spred
+spred_new
+*.o
+# данные и результаты прогонов
+data/
+rep/
+*.log
+*.out
+*.csv
+*.csv.gz
+*.raw
+*.raw.gz
+*.tgz
+# ключи
+.env
+# python
+__pycache__/
+*.pyc
+.venv/

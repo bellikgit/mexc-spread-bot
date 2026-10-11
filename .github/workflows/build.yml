@@ -1,0 +1,17 @@
+name: build
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y g++ libssl-dev
+      - name: Build C++ bot
+        run: make
+      - name: Check Python tools
+        run: |
+          pip install -r requirements.txt
+          python3 -m py_compile tools/*.py
+      - name: Check shell scripts
+        run: for f in scripts/*.sh scripts/experiments/*.sh; do bash -n "$f"; done
