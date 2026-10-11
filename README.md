@@ -1,5 +1,7 @@
 # MEXC Spread Bot
 
+🇷🇺 Русский | [🇬🇧 English](README.en.md)
+
 ![build](../../actions/workflows/build.yml/badge.svg)
 
 **Маркет-мейкинг на споте MEXC: бот на C++17 + инструменты анализа на Python.**
