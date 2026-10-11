@@ -120,4 +120,4 @@ nohup python3 tools/xrec.py --out data/x --auto 40 > xrec.log 2>&1 &
 mkdir -p data
 MM_FAIR=bybit MM_ORDER_USDT=10 ./spred BONKUSDT,SANDUSDT 3600 > data/paper_test.out 2>&1
 python3 tools/paper_sum.py data/paper_test.out
-``` инвестиционной рекомендацией. Live-режим не прошёл полноценную проверку на реальных деньгах. Используйте на свой риск.
+``` не инвестиционной рекомендацией. Live-режим не прошёл полноценную проверку на реальных деньгах. Используйте на свой риск.
