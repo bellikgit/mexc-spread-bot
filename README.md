@@ -101,8 +101,14 @@ docs/                      выводы и журнал
 ## Сборка и запуск
 
 ```bash
-sudo apt install g++ libssl-dev python3-pip
+sudo apt install g++ make libssl-dev python3-pip
+
+# сборка бота (Makefile)
 make                                   # -> ./spred
+
+# или вручную
+g++ -std=c++17 -O2 -o spred src/spred.cpp -lssl -lcrypto -lpthread
+
 pip install -r requirements.txt
 
 # рекордер данных
@@ -112,10 +118,4 @@ nohup python3 tools/xrec.py --out data/x --auto 40 > xrec.log 2>&1 &
 mkdir -p data
 MM_FAIR=bybit MM_ORDER_USDT=10 ./spred BONKUSDT,SANDUSDT 3600 > data/paper_test.out 2>&1
 python3 tools/paper_sum.py data/paper_test.out
-```
-
-Все параметры задаются переменными окружения `MM_*` и описаны в шапке `src/spred.cpp`. Ключи API нужны только для live-режима (см. `.env.example`).
-
-## Дисклеймер
-
-Проект учебно-исследовательский и не является инвестиционной рекомендацией. Live-режим не прошёл полноценную проверку на реальных деньгах. Используйте на свой риск.
+``` инвестиционной рекомендацией. Live-режим не прошёл полноценную проверку на реальных деньгах. Используйте на свой риск.
