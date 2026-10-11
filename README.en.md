@@ -1,5 +1,4 @@
-[README.en.md](https://github.com/user-attachments/files/33315730/README.en.md)
-# MEXC Spread Bot
+# MEXC Spread Bo
 
 [🇷🇺 Русский](README.md) | 🇬🇧 English
 
