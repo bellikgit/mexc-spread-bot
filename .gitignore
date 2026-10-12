@@ -18,3 +18,7 @@ rep/
 __pycache__/
 *.pyc
 .venv/
+
+# результаты экспериментов — коммитим
+!results/
+!results/**

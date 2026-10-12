@@ -1,4 +1,4 @@
-# MEXC Spread Bo
+# MEXC Spread Bot
 
 [🇷🇺 Русский](README.md) | 🇬🇧 English
 
@@ -73,7 +73,7 @@ flowchart LR
 | Taker arbitrage on the MEXC → Bybit lag | −2 to −28 bps after fees |
 | Infrastructure stability | 10 h without reconnects, fresh Bybit price 94–99% of the time |
 
-Details (in Russian): [`docs/FINDINGS.md`](docs/FINDINGS.md) — findings, [`docs/JOURNAL_2026-10-06.md`](docs/JOURNAL_2026-10-06.md) — work journal.
+Real run logs with analysis (in Russian): [`results/`](results/). Details: [`docs/FINDINGS.md`](docs/FINDINGS.md) — findings, [`docs/JOURNAL_2026-10-06.md`](docs/JOURNAL_2026-10-06.md) — work journal.
 
 ## What I learned
 
@@ -96,6 +96,7 @@ tools/feecheck.py          account fees per pair
 scripts/                   server maintenance and reports
 scripts/experiments/       paper run configs, including A/B
 docs/                      findings and journal (Russian)
+results/                   paper run logs and summaries
 ```
 
 ## Build and run

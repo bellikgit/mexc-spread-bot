@@ -1,0 +1,155 @@
+{
+  "generated": "2026-10-01T13:09:30",
+  "pairs": {
+    "TAGUSDT": [
+      {
+        "log": "tag_n9.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1370.0,
+        "fills": 82,
+        "pnl_usdt": 4.6095,
+        "pnl_vol_bps": 33.65,
+        "ci95_bps": 7.92,
+        "verdict": "EDGE+",
+        "asym_b_s": 1.1,
+        "escapes": {
+          "n": 0,
+          "tax_bps_vol": -0.0,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 27.1,
+          "buy_med": 46.6,
+          "sell_med": 8.6
+        },
+        "mo_gap_usd": 0.184,
+        "inv_pnl_calc": 0.191,
+        "mid_drift_bps": 158.3,
+        "pos_end": 50.1,
+        "pos_max": 104.9,
+        "spr_med_bps": 136.3,
+        "queue_share": 0.037,
+        "fees_taker_usdt": 0.0,
+        "cal": {
+          "fills_hr": 10.25,
+          "pnl_vol_bps": 33.65,
+          "n_fills": 82
+        }
+      }
+    ],
+    "ZILUSDT": [
+      {
+        "log": "zil_n9.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 2841.0,
+        "fills": 155,
+        "pnl_usdt": 1.7821,
+        "pnl_vol_bps": 6.27,
+        "ci95_bps": 1.67,
+        "verdict": "EDGE+",
+        "asym_b_s": 0.91,
+        "escapes": {
+          "n": 2,
+          "tax_bps_vol": 0.72,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 8.5,
+          "buy_med": 11.4,
+          "sell_med": 7.1
+        },
+        "mo_gap_usd": -0.599,
+        "inv_pnl_calc": -0.666,
+        "mid_drift_bps": -109.2,
+        "pos_end": 143.8,
+        "pos_max": 143.8,
+        "spr_med_bps": 48.3,
+        "queue_share": 0.213,
+        "fees_taker_usdt": 0.0425,
+        "cal": {
+          "fills_hr": 19.38,
+          "pnl_vol_bps": 6.27,
+          "n_fills": 155,
+          "fill_cal_fact": null
+        },
+        "scan_csv": null
+      }
+    ],
+    "CAWUSDT": [
+      {
+        "log": "caw_n9.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 2032.0,
+        "fills": 95,
+        "pnl_usdt": 1.5611,
+        "pnl_vol_bps": 7.68,
+        "ci95_bps": 5.89,
+        "verdict": "EDGE+",
+        "asym_b_s": 1.02,
+        "escapes": {
+          "n": 3,
+          "tax_bps_vol": 6.34,
+          "slip_mean_bps": -24.9
+        },
+        "mo30": {
+          "all_med": 14.3,
+          "buy_med": 24.5,
+          "sell_med": 0.9
+        },
+        "mo_gap_usd": -0.034,
+        "inv_pnl_calc": -0.39,
+        "mid_drift_bps": -136.0,
+        "pos_end": 49.9,
+        "pos_max": 149.0,
+        "spr_med_bps": 96.0,
+        "queue_share": 0.116,
+        "fees_taker_usdt": 0.075,
+        "cal": {
+          "fills_hr": 11.88,
+          "pnl_vol_bps": 7.68,
+          "n_fills": 95,
+          "fill_cal_fact": null
+        },
+        "scan_csv": null
+      }
+    ],
+    "ANDYETHUSDT": [
+      {
+        "log": "andy_n9.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1192.0,
+        "fills": 67,
+        "pnl_usdt": 1.7499,
+        "pnl_vol_bps": 14.68,
+        "ci95_bps": 18.76,
+        "verdict": "~0",
+        "asym_b_s": 1.23,
+        "escapes": {
+          "n": 1,
+          "tax_bps_vol": 2.12,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 28.8,
+          "buy_med": 65.2,
+          "sell_med": 7.7
+        },
+        "mo_gap_usd": -1.472,
+        "inv_pnl_calc": -1.433,
+        "mid_drift_bps": 172.9,
+        "pos_end": 38.1,
+        "pos_max": 122.3,
+        "spr_med_bps": 208.1,
+        "queue_share": 0.134,
+        "fees_taker_usdt": 0.0187,
+        "cal": {
+          "fills_hr": 8.38,
+          "pnl_vol_bps": 14.68,
+          "n_fills": 67,
+          "fill_cal_fact": null
+        },
+        "scan_csv": null
+      }
+    ]
+  }
+}

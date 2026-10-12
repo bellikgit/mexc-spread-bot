@@ -1,0 +1,245 @@
+{
+  "generated": "2026-10-03T22:47:34",
+  "pairs": {
+    "ANDYETHUSDT": [
+      {
+        "log": "andyethusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 2202.0,
+        "fills": 120,
+        "pnl_usdt": -4.2385,
+        "pnl_vol_bps": -19.25,
+        "ci95_bps": 8.86,
+        "verdict": "EDGE-",
+        "asym_b_s": 1.07,
+        "escapes": {
+          "n": 1,
+          "tax_bps_vol": -5.85,
+          "slip_mean_bps": -0.4
+        },
+        "mo30": {
+          "all_med": 2.1,
+          "buy_med": 24.0,
+          "sell_med": 3.9
+        },
+        "mo_gap_usd": -5.99,
+        "inv_pnl_calc": -6.995,
+        "mid_drift_bps": -694.2,
+        "pos_end": 0.0,
+        "pos_max": 133.3,
+        "spr_med_bps": 166.5,
+        "queue_share": 0.117,
+        "late_ev": 6,
+        "fees_taker_usdt": 0.0192,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 4.8,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": -19.25,
+          "n_fills": 120
+        },
+        "boot_ci": null
+      }
+    ],
+    "BANUSDT": [
+      {
+        "log": "banusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 7299.0,
+        "fills": 513,
+        "pnl_usdt": 1.3543,
+        "pnl_vol_bps": 1.86,
+        "ci95_bps": 3.16,
+        "verdict": "~0",
+        "asym_b_s": 0.94,
+        "escapes": {
+          "n": 5,
+          "tax_bps_vol": 1.91,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 8.0,
+          "buy_med": 18.3,
+          "sell_med": 9.5
+        },
+        "mo_gap_usd": -2.937,
+        "inv_pnl_calc": -10.599,
+        "mid_drift_bps": 92.9,
+        "pos_end": 6.8,
+        "pos_max": 144.6,
+        "spr_med_bps": 105.8,
+        "queue_share": 0.088,
+        "late_ev": 7,
+        "fees_taker_usdt": 0.1178,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 20.52,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": 1.86,
+          "n_fills": 513
+        },
+        "boot_ci": null
+      }
+    ],
+    "CAWUSDT": [
+      {
+        "log": "cawusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 7089.0,
+        "fills": 360,
+        "pnl_usdt": -7.6238,
+        "pnl_vol_bps": -10.75,
+        "ci95_bps": 3.57,
+        "verdict": "EDGE-",
+        "asym_b_s": 0.78,
+        "escapes": {
+          "n": 6,
+          "tax_bps_vol": 1.44,
+          "slip_mean_bps": -26.7
+        },
+        "mo30": {
+          "all_med": -1.5,
+          "buy_med": 16.6,
+          "sell_med": 1.3
+        },
+        "mo_gap_usd": -5.569,
+        "inv_pnl_calc": -10.276,
+        "mid_drift_bps": -157.9,
+        "pos_end": 0.0,
+        "pos_max": 145.8,
+        "spr_med_bps": 87.3,
+        "queue_share": 0.05,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.1297,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 14.4,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": -10.75,
+          "n_fills": 360
+        },
+        "boot_ci": null
+      }
+    ],
+    "GMEUSDT": [
+      {
+        "log": "gmeusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 3655.0,
+        "fills": 231,
+        "pnl_usdt": 9.1518,
+        "pnl_vol_bps": 25.04,
+        "ci95_bps": 3.78,
+        "verdict": "EDGE+",
+        "asym_b_s": 0.88,
+        "escapes": {
+          "n": 0,
+          "tax_bps_vol": -0.0,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 26.1,
+          "buy_med": 41.0,
+          "sell_med": 13.4
+        },
+        "mo_gap_usd": -0.737,
+        "inv_pnl_calc": -0.908,
+        "mid_drift_bps": -155.8,
+        "pos_end": 59.8,
+        "pos_max": 138.2,
+        "spr_med_bps": 165.5,
+        "queue_share": 0.143,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 9.24,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": 25.04,
+          "n_fills": 231
+        },
+        "boot_ci": null
+      }
+    ],
+    "TAGUSDT": [
+      {
+        "log": "tagusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 6475.0,
+        "fills": 379,
+        "pnl_usdt": 8.6381,
+        "pnl_vol_bps": 13.34,
+        "ci95_bps": 1.73,
+        "verdict": "EDGE+",
+        "asym_b_s": 0.82,
+        "escapes": {
+          "n": 1,
+          "tax_bps_vol": 0.23,
+          "slip_mean_bps": 0.5
+        },
+        "mo30": {
+          "all_med": 9.9,
+          "buy_med": 20.2,
+          "sell_med": 6.4
+        },
+        "mo_gap_usd": 2.44,
+        "inv_pnl_calc": 1.933,
+        "mid_drift_bps": 312.4,
+        "pos_end": 0.0,
+        "pos_max": 122.2,
+        "spr_med_bps": 70.1,
+        "queue_share": 0.1,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0214,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 15.16,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": 13.34,
+          "n_fills": 379
+        },
+        "boot_ci": null
+      }
+    ],
+    "ZILUSDT": [
+      {
+        "log": "zilusdt_n11.log",
+        "duration_s": 90000.0,
+        "volume_usdt": 6287.0,
+        "fills": 602,
+        "pnl_usdt": -2.7551,
+        "pnl_vol_bps": -4.38,
+        "ci95_bps": 0.86,
+        "verdict": "EDGE-",
+        "asym_b_s": 1.32,
+        "escapes": {
+          "n": 1,
+          "tax_bps_vol": 0.11,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": -2.1,
+          "buy_med": -1.4,
+          "sell_med": 1.4
+        },
+        "mo_gap_usd": -1.373,
+        "inv_pnl_calc": -0.966,
+        "mid_drift_bps": -61.7,
+        "pos_end": 0.0,
+        "pos_max": 133.3,
+        "spr_med_bps": 20.2,
+        "queue_share": 0.317,
+        "late_ev": 1,
+        "fees_taker_usdt": 0.0187,
+        "scan_csv": null,
+        "cal": {
+          "fills_hr": 24.08,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": -4.38,
+          "n_fills": 602
+        },
+        "boot_ci": null
+      }
+    ]
+  }
+}

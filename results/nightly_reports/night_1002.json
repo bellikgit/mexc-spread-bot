@@ -1,0 +1,245 @@
+{
+  "generated": "2026-10-02T16:59:20",
+  "pairs": {
+    "ANDYETHUSDT": [
+      {
+        "log": "andy_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 720.0,
+        "fills": 40,
+        "pnl_usdt": 3.3336,
+        "pnl_vol_bps": 46.29,
+        "ci95_bps": 4.69,
+        "verdict": "EDGE+",
+        "asym_b_s": 0.48,
+        "escapes": {
+          "n": 0,
+          "tax_bps_vol": -0.0,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 13.3,
+          "buy_med": 20.1,
+          "sell_med": 6.3
+        },
+        "mo_gap_usd": 2.38,
+        "inv_pnl_calc": 2.399,
+        "mid_drift_bps": 448.4,
+        "pos_end": 0.0,
+        "pos_max": 137.9,
+        "spr_med_bps": 181.5,
+        "queue_share": 0.125,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 5.0,
+          "fill_cal_fact": 0.0416,
+          "pnl_vol_bps": 46.29,
+          "n_fills": 40
+        },
+        "boot_ci": null
+      }
+    ],
+    "BANUSDT": [
+      {
+        "log": "ban_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 3243.0,
+        "fills": 200,
+        "pnl_usdt": 2.1591,
+        "pnl_vol_bps": 6.66,
+        "ci95_bps": 3.55,
+        "verdict": "EDGE+",
+        "asym_b_s": 1.15,
+        "escapes": {
+          "n": 6,
+          "tax_bps_vol": 5.59,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 16.5,
+          "buy_med": 25.2,
+          "sell_med": 8.4
+        },
+        "mo_gap_usd": -0.874,
+        "inv_pnl_calc": -1.897,
+        "mid_drift_bps": 138.2,
+        "pos_end": 0.0,
+        "pos_max": 149.9,
+        "spr_med_bps": 97.2,
+        "queue_share": 0.095,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.1491,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 25.0,
+          "fill_cal_fact": 0.5,
+          "pnl_vol_bps": 6.66,
+          "n_fills": 200
+        },
+        "boot_ci": null
+      }
+    ],
+    "CAWUSDT": [
+      {
+        "log": "caw_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1909.0,
+        "fills": 98,
+        "pnl_usdt": 0.4686,
+        "pnl_vol_bps": 2.46,
+        "ci95_bps": 3.37,
+        "verdict": "~0",
+        "asym_b_s": 0.81,
+        "escapes": {
+          "n": 2,
+          "tax_bps_vol": 2.97,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 5.9,
+          "buy_med": 9.7,
+          "sell_med": 1.9
+        },
+        "mo_gap_usd": -0.418,
+        "inv_pnl_calc": -0.282,
+        "mid_drift_bps": 205.0,
+        "pos_end": 90.4,
+        "pos_max": 145.5,
+        "spr_med_bps": 68.5,
+        "queue_share": 0.214,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0463,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 12.25,
+          "fill_cal_fact": 0.1537,
+          "pnl_vol_bps": 2.46,
+          "n_fills": 98
+        },
+        "boot_ci": null
+      }
+    ],
+    "GMEUSDT": [
+      {
+        "log": "gme_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1820.0,
+        "fills": 98,
+        "pnl_usdt": 6.3891,
+        "pnl_vol_bps": 35.11,
+        "ci95_bps": 5.07,
+        "verdict": "EDGE+",
+        "asym_b_s": 1.58,
+        "escapes": {
+          "n": 6,
+          "tax_bps_vol": 14.16,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 33.1,
+          "buy_med": 55.3,
+          "sell_med": 8.1
+        },
+        "mo_gap_usd": 3.421,
+        "inv_pnl_calc": 4.023,
+        "mid_drift_bps": 622.8,
+        "pos_end": 66.1,
+        "pos_max": 157.0,
+        "spr_med_bps": 160.3,
+        "queue_share": 0.133,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.1376,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 12.25,
+          "fill_cal_fact": 0.2283,
+          "pnl_vol_bps": 35.11,
+          "n_fills": 98
+        },
+        "boot_ci": null
+      }
+    ],
+    "TAGUSDT": [
+      {
+        "log": "tag_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1695.0,
+        "fills": 94,
+        "pnl_usdt": 1.7911,
+        "pnl_vol_bps": 10.57,
+        "ci95_bps": 7.13,
+        "verdict": "EDGE+",
+        "asym_b_s": 1.0,
+        "escapes": {
+          "n": 0,
+          "tax_bps_vol": -0.0,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 32.0,
+          "buy_med": 39.9,
+          "sell_med": 7.5
+        },
+        "mo_gap_usd": -4.491,
+        "inv_pnl_calc": -3.943,
+        "mid_drift_bps": 178.8,
+        "pos_end": 83.2,
+        "pos_max": 108.0,
+        "spr_med_bps": 132.9,
+        "queue_share": 0.096,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 11.75,
+          "fill_cal_fact": 0.1489,
+          "pnl_vol_bps": 10.57,
+          "n_fills": 94
+        },
+        "boot_ci": null
+      }
+    ],
+    "ZILUSDT": [
+      {
+        "log": "zil_n10.log",
+        "duration_s": 28800.0,
+        "volume_usdt": 1733.0,
+        "fills": 122,
+        "pnl_usdt": 3.0814,
+        "pnl_vol_bps": 17.78,
+        "ci95_bps": 4.34,
+        "verdict": "EDGE+",
+        "asym_b_s": 0.79,
+        "escapes": {
+          "n": 1,
+          "tax_bps_vol": 2.28,
+          "slip_mean_bps": 0.0
+        },
+        "mo30": {
+          "all_med": 16.5,
+          "buy_med": 17.3,
+          "sell_med": 2.9
+        },
+        "mo_gap_usd": 0.685,
+        "inv_pnl_calc": 0.916,
+        "mid_drift_bps": 101.9,
+        "pos_end": 0.0,
+        "pos_max": 139.3,
+        "spr_med_bps": 106.1,
+        "queue_share": 0.254,
+        "late_ev": 0,
+        "fees_taker_usdt": 0.0231,
+        "scan_csv": "scan_tape2_20261002_1519.csv",
+        "cal": {
+          "fills_hr": 15.25,
+          "fill_cal_fact": null,
+          "pnl_vol_bps": 17.78,
+          "n_fills": 122
+        },
+        "boot_ci": null
+      }
+    ]
+  }
+}

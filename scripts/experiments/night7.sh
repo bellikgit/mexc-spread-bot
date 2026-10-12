@@ -1,0 +1,8 @@
+#!/bin/bash
+cd "$(dirname "$0")/../.."
+run() { MM_LOG=04october/${1,,}_n12.log MM_RAW_LOG=04october/${1,,}_n12.raw MM_LOG_DEALS=1 MM_INIT_MODE=1 MM_ORDER_USDT=50 MM_MAX_POS=150 MM_MAX_LOSS=25 MM_ESCAPE_COOLDOWN_SEC=90 MM_CUTOFF_BPS=$3 MM_CUTOFF_SEC=$4 MM_MAX_SPREAD_BPS=500 MM_REQUOTE_FRAC=$5 MM_MIN_REQUOTE_SEC=2 MM_REORDER_MS=50 MM_LATENCY_MS=22 MM_CANCEL_LAT_MS=22 MM_RTT_MS=23 MM_TAKER_BPS=16 MM_INV_SKEW_FRAC=$2 setsid nohup ./spred $1 43200 20 22 > 04october/${1,,}_n12.out 2>&1 & echo "$1: $!"; }
+run TAGUSDT     0.40 100  60 0.12
+run GMEUSDT     0.40  82 180 0.10
+run ANDYETHUSDT 0.40  92 290 0.10
+run ZILUSDT     0.25  80 290 0.11
+echo "стартовано 4 бота на 12ч (до ~12:25 МСК): $(date)"

@@ -1,0 +1,70 @@
+nohup: ignoring input
+[21:47:48] MEXC MM-сканер v4.0: механика spred v2.14/2.15, fill-cal 0.015, t-hold-cap 60 мин, +режимы (VR/EFF) и фактор BTC
+[21:47:50] [lat] RTT: медиана 19 мс, p90 23; сдвиг часов +14 мс
+[21:47:50] [lat] в модели задержка 34 мс
+[21:47:51] [refs] binance_spot  757
+[21:47:51] [refs] binance_perp  740
+[21:47:51] [refs] bybit_spot    392
+[21:47:51] [refs] bybit_perp    789
+[21:47:51] [refs] okx_spot      408
+[21:47:51] [refs] okx_perp      480
+[21:47:51] [refs] mexc_perp     1106
+[21:47:51] [universe] USDT-пар: 1497, прошло фильтры: 921
+[21:47:51] [universe] отсеяно: объём вне диапазона 271, спред вне диапазона 219, статус 77, стейбл 9
+[21:48:22] [hist] bbo-строк за ~6 ч: 987527
+[21:48:22] [sample] живой замер 8 мин (каждые 15 с)...
+[21:56:22] [deep] глубокий анализ 60 пар
+[21:56:36] [deep] готово: 60 пар
+[21:56:37] [btc] фактор посчитан (500 мин). Режим BTC 8ч: VR5 0.93, EFF 0.05 — боковик/нейтрально
+[21:56:50] [btc] лаг 15с посчитан для 56 пар (из bbo-истории)
+
+  # SYMBOL         OK   SCORE   $/d*    NET    SPR  R/S   VR  EFF    β IDIO  LAG TCK   UP   σ1m  Fb/h  Fs/h    $/h   RVOL  TPM  AGE  REF            HEDGE             FLAGS
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1 ALPHUSDT       -     0.01   0.04   13.9  229.4  8.9 0.60 0.03 0.34 1.00   3m 164 1.00  25.7   0.1   0.2    3.9    57k  2.6 1007  -              -                 NOREF THIN NOFILL SPOOF? FADER IDIO
+  2 GMEUSDT        -     0.00   0.01   20.0  170.2 10.3 0.62 0.01 0.06 1.00  45s  88 1.00  16.6   0.0   0.0    0.9    50k  2.2  870  -              -                 NOREF NOFILL FLOW1S REF≠ FADER IDIO
+  3 FARTBOYUSDT    -     0.00   0.01   20.1  247.3  9.4 0.98 0.04-0.04 1.00   2m 496 0.59  26.4   0.0   0.0    0.8    55k  2.4  587  -              -                 DARK NOREF NOFILL FLOW1S SPOOF? FADER IDIO
+  4 FLTUSDT        -     0.00   0.00   20.4  142.7 11.0 0.98 0.12 0.01 1.00   0s 829 1.00  13.0   0.0   0.0    0.1    52k  2.2  653  -              -                 NOREF NOFILL IDIO
+  5 KAGUSDT        -     0.00   0.01    7.2  142.9  8.7 0.45 0.05-0.20 1.00  75s  43 1.00  16.4   0.0   0.0    1.9    92k  1.8  161  -              -                 NOREF THIN LOT NOFILL FLOW1S SPOOF? FADER IDIO
+  6 ELFUSDT        -     0.00   0.00  112.4  264.4 52.4 0.39 0.02 0.08 1.00   2m 213 0.22   5.0   0.0   0.0    0.0    48k  2.1 2838  -              -                 DARK ST NOREF THIN NOFILL FILL? REF≠ FADER IDIO
+  7 TARAUSDT       -     0.00   0.00   65.2  354.8 12.4 0.72 0.01-0.35 1.00  -3m  91 0.00  28.6   0.0   0.0    0.0    55k  2.1 2021  -              -                 DARK ST PUMP NOREF THIN NOFILL FILL? SPOOF? FADER IDIO
+  8 SNFTUSDT       -     0.00   0.00   54.9  237.9 14.6 0.40 0.01-0.06 1.00  75s  44 0.53  16.3   0.0   0.0    0.2    52k  2.1 1470  -              -                 DARK NOREF THIN NOFILL FLOW1S FADER IDIO
+  9 ATMUSDT        -     0.00   0.00   53.9  168.9 21.7 0.75 0.00-0.13 0.99  -3m 180 1.00   7.8   0.0   0.0    0.0    55k  2.1  186  binance-spot   -                 NOFILL FILL? SPOOF? FADER IDIO
+ 10 OMGUSDT        -     0.00   0.00   47.1  178.0 16.7 0.39 0.02 0.03 1.00   0s  89 1.00  10.7   0.0   0.0    0.5    47k  2.2    ?  -              -                 AGE? NOREF NOFILL FLOW1S FADER IDIO
+ 11 XEPUSDT        -     0.00   0.00   43.5  233.0 12.5 0.43 0.06 0.10 1.00  -3m  34 1.00  18.6   0.0   0.0    0.9    54k  2.2 1596  -              -                 NOREF THIN NOFILL FLOW1S FADER IDIO
+ 12 PIGUSDT        -     0.00   0.00   39.9  139.9 18.3 0.25 0.00 0.03 1.00  -2m  21 1.00   7.7   0.0   0.0    0.0    54k  2.1 1989  -              -                 ST NOREF THIN NOFILL FILL? FADER IDIO
+ 13 BANUSDT        -     0.00   0.00   35.6  161.1 14.1 0.53 0.05-0.01 1.00  15s 106 1.00  11.5   0.0   0.0    0.0    49k  2.1  704  binance-perp   binance,bybit,mexcHEDGE NOFILL FILL? FADER IDIO
+ 14 SPACEX(PRE)USDT-     0.00   0.00   34.8  137.6 15.8 0.55 0.05-0.06 1.00   0s 204 1.00   8.7   0.0   0.0    0.0    56k  2.1  129  -              -                 NOREF LOT NOFILL FILL? SPOOF? FADER IDIO
+ 15 SMARSUSDT      -     0.00   0.00   29.4  205.7 11.0 0.82 0.01-0.11 1.00  -1m  91 1.00  18.7   0.0   0.0    0.0    54k  2.1 1972  -              -                 ST NOREF THIN NOFILL FILL? FADER IDIO
+
+Легенда (v4.0, механика spred v2.14/2.15 — inside 25%):
+  OK   — ★ пара прошла все ворота (watchlist = только они)
+  SCORE — $/день × качество. $/d* — СРЕДНЯЯ оценка (--fill-cal).
+  NET  — край на КРУГ, bps. adverse по t_hold с капом --t-hold-cap.
+  SPR  — спред, bps (медиана замеров / истории; SNAP = только снимок)
+  R/S  — спред/σ1m: <3 TOXIC, <5 RATIO
+  VR   — variance ratio 5м: <0.85 боковик, >1.10 тренд (VR15 — 15м)
+  EFF  — path efficiency: ~0 чистый боковик, ~1 чистый тренд
+  β    — бета к BTC (1м); IDIO — доля дисперсии без BTC (1-corr²)
+  LAG  — отставание пары от BTC (15с из bbo-истории / мин из клинов)
+  TCK  — спред в тиках: ≥4 — бот встаёт внутрь на 25%; <4 — в BBO (TICK)
+  UP   — uptime котировок
+  Fb Fs — калиброванные пробивные принты/час (raw в CSV: *_raw)
+  σ1m  — волатильность 1 мин, bps       $/h — калиброванный $-поток филлов
+  RVOL — очищенный объём/день           TPM — всех сделок/мин
+  AGE  — дней с листинга
+Флаги: SNAP снимок | DARK спред вне окна | TOXIC/RATIO спред против σ |
+  FADER боковик (VR/EFF) | RUNNER тренд | LEAD отстаёт от BTC ≥30с —
+  BTC-гейт в боте будет ценен | BTCβ пара ≈ прокси BTC (портфель = одна
+  ставка) | IDIO живёт своей жизнью | HOUR? сильная сезонность суток |
+  NOFILL <2 калибр. принтов/ч | FILL? мало данных | FLOW1S односторонний поток |
+  JANK лента дёргана | SLOW круг >60 мин | DRIFT? MEXC ≠ внешний рынок |
+  SPOOF? имбаланс прижат | RUNS/BIGFLOW токсичный поток | HOT/WARM движение 24ч |
+  NEW/YOUNG листинг | ST риск | WASH? | DEAD/PUMP | NOREF/PRO/HEDGE | THIN |
+  LOT грубый шаг количества | TICK узкий спред | STALE нет сделок | Z0 комиссии 0 |
+  NEG край ≤0 | REF≠
+Калибровка: --fill-cal (def 0.015). --t-hold-cap (def 60 мин).
+BTC-фактор: --no-btc выключает. Лаг 15с требует demon v3.1+ (BTC в записях).
+Env: verify/watchlist rec — готовые MM_* для spred v2.14/2.15.
+
+[21:56:50] [out] scan_20261001_2156.csv  (все метрики, raw+cal, режимы, BTC-фактор)
+[21:56:50] [out] НИ ОДНА пара не прошла ворота — ослабь --min-est-day / --fills-gate или жди другой режим
