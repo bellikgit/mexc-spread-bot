@@ -7,6 +7,10 @@
 **Market making on MEXC spot: a C++17 bot plus a Python research toolkit.**
 A finished research project. The hypothesis was tested on real market data and rejected. The main result is an explanation of why this strategy does not work for a retail trader.
 
+## Modular version
+
+The C++ bot now uses 22 translation units. See [architecture](docs/ARCHITECTURE.md) and [refactoring report](docs/REFACTORING_REPORT.md) (Russian) for boundaries and offline tests. Trading logic and research conclusions have not been redesigned. Build on Linux, or WSL2 on Windows.
+
 ---
 
 ## Overview
@@ -47,7 +51,7 @@ flowchart LR
     AN -->|pairs and parameters| BOT
 ```
 
-**`src/spred.cpp`: the bot (single file, OpenSSL only)**
+**`src/` + `include/spred/`: modular bot (C++17, OpenSSL only)**
 - Multi-pair mode: one process handles N pairs; several processes share a rate limiter (`/dev/shm` + `flock`).
 - Paper engine: FIFO queue model, network latency, synthetic print filter, per-pair fees.
 - Live mode: signed REST requests, private WebSocket (protobuf), position reconciliation with the exchange, handling of disconnects, 429/418 and idempotent retries. The live path was debugged against a local TLS mock of the exchange with fault injection.
@@ -86,7 +90,17 @@ Real run logs with analysis (in Russian): [`results/`](results/). Details: [`doc
 ## Repository structure
 
 ```
-src/spred.cpp              bot (paper + live), C++17
+src/main.cpp              entry point
+src/app/                  startup, session, event processing, replay
+src/trading/              strategy, paper engine, live execution and ledger
+src/net/                  TLS, HTTP, WebSocket
+src/protocol/             MEXC message decoding
+src/market/               order book
+src/exchange/             REST client and symbol metadata
+src/feeds/                Bybit fair-price feed
+src/core/                 configuration, clocks, encoding, rate limits
+src/reporting/            reports
+include/spred/            interfaces, configurations and data models
 tools/xrec.py, demon2.py   MEXC + Bybit recorder
 tools/xscan.py, xtune.py   Q model and parameter tuning on recorded data
 tools/pickdays.py          pair selection by stable markout
@@ -105,10 +119,10 @@ results/                   paper run logs and summaries
 sudo apt install g++ make libssl-dev python3-pip
 
 # build the bot (Makefile)
-make                                   # -> ./spred
+make -j2                               # -> ./spred
 
-# or manually
-g++ -std=c++17 -O2 -o spred src/spred.cpp -lssl -lcrypto -lpthread
+# offline regression checks, no exchange connection
+make check
 
 pip install -r requirements.txt
 
@@ -121,7 +135,7 @@ MM_FAIR=bybit MM_ORDER_USDT=10 ./spred BONKUSDT,SANDUSDT 3600 > data/paper_test.
 python3 tools/paper_sum.py data/paper_test.out
 ```
 
-All parameters are set via `MM_*` environment variables and documented in the header of `src/spred.cpp` (comments are in Russian). API keys are needed only for live mode (see `.env.example`).
+All parameters are set via `MM_*` environment variables and listed in [configuration and history](docs/LEGACY_CONFIGURATION_AND_HISTORY.md) (Russian); current defaults are in `src/app/application.cpp` and `include/spred/trading/`. API keys are needed only for live mode (see `.env.example`).
 
 ## Disclaimer
 

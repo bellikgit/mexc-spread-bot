@@ -1,0 +1,14 @@
+Clean build: C++17 -O2 -Wall -Wextra; no compiler warnings.
+g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+OpenSSL 3.5.8 25 Aug 2026 (Library: OpenSSL 3.5.8 25 Aug 2026)
+PASS 95 checks; exact match with original implementation
+PASS offline replay 1: exact normalized output match (1000 frames)
+PASS offline replay 2: exact normalized output match (1000 frames)
+PASS offline replay 3: exact normalized output match (1000 frames)
+PASS guard: missing live credentials
+PASS guard: missing live confirmation
+PASS guard: too many symbols
+PASS guard: missing replay
+PASS 28 self-contained public headers
+PASS syntax: 9 Python tools, 7 shell scripts
+All checks passed. No real exchange connection or trade was performed.
