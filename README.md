@@ -9,6 +9,10 @@
 
 > **TL;DR (EN).** C++17 market-making bot for MEXC spot (paper + live modes, own TLS/WebSocket/protobuf stack) and a Python research toolkit. Deployed on an Ubuntu VPS in Tokyo next to the exchange. After 2+ weeks of paper trading and A/B tests I found that the "profitable" fills on illiquid pairs were wash trades printed *inside* the spread by the token's own bots. On liquid pairs the real edge was too small for a retail participant. Project closed with a documented negative result.
 
+## Модульная версия
+
+Основной C++-код разделён на 22 единицы компиляции. [Архитектура](docs/ARCHITECTURE.md) и [отчёт о рефакторинге](docs/REFACTORING_REPORT.md) описывают границы модулей и офлайн-проверки. Стратегия и её исследовательские выводы не пересматривались. Поддерживаемая среда — Linux; на Windows используйте WSL2.
+
 ---
 
 ## Коротко
@@ -49,7 +53,7 @@ flowchart LR
     AN -->|пары и параметры| BOT
 ```
 
-**`src/spred.cpp`: бот (один файл, только OpenSSL)**
+**`src/` + `include/spred/`: модульный бот (C++17, только OpenSSL)**
 - Мультипарный режим: один процесс на N пар, несколько процессов с общим rate-limiter (`/dev/shm` + `flock`).
 - Paper-движок: модель очереди FIFO, сетевая задержка, фильтр синтетических принтов, комиссии по парам.
 - Live-режим: подписанные REST-запросы, приватный WebSocket (protobuf), сверка позиции с биржей, обработка обрывов, 429/418 и идемпотентные повторы. Live-контур отлажен на локальном TLS-моке биржи с имитацией отказов.
@@ -88,7 +92,17 @@ flowchart LR
 ## Структура
 
 ```
-src/spred.cpp              бот (paper + live), C++17
+src/main.cpp              точка входа
+src/app/                  запуск, сессия, обработка событий, replay
+src/trading/              стратегия, paper-движок, live-исполнение и учёт
+src/net/                  TLS, HTTP, WebSocket
+src/protocol/             декодирование сообщений MEXC
+src/market/               рыночная книга
+src/exchange/             REST-клиент и метаданные символа
+src/feeds/                внешний fair-price Bybit
+src/core/                 конфигурация, время, кодирование, лимиты
+src/reporting/            отчёты
+include/spred/            объявления, конфигурации и модели
 tools/xrec.py, demon2.py   рекордер MEXC + Bybit
 tools/xscan.py, xtune.py   модель Q и подбор параметров по записям
 tools/pickdays.py          отбор пар по стабильному маркауту
@@ -107,10 +121,10 @@ results/                   логи и итоги paper-прогонов
 sudo apt install g++ make libssl-dev python3-pip
 
 # сборка бота (Makefile)
-make                                   # -> ./spred
+make -j2                               # -> ./spred
 
-# или вручную
-g++ -std=c++17 -O2 -o spred src/spred.cpp -lssl -lcrypto -lpthread
+# офлайн-проверки, без подключения к бирже
+make check
 
 pip install -r requirements.txt
 
@@ -123,7 +137,7 @@ MM_FAIR=bybit MM_ORDER_USDT=10 ./spred BONKUSDT,SANDUSDT 3600 > data/paper_test.
 python3 tools/paper_sum.py data/paper_test.out
 ```
 
-Все параметры задаются переменными окружения `MM_*` и описаны в шапке `src/spred.cpp`. Ключи API нужны только для live-режима (см. `.env.example`).
+Все параметры задаются переменными окружения `MM_*` и перечислены в [истории и конфигурации](docs/LEGACY_CONFIGURATION_AND_HISTORY.md); актуальные значения по умолчанию — в `src/app/application.cpp` и `include/spred/trading/`. Ключи API нужны только для live-режима (см. `.env.example`).
 
 ## Дисклеймер
 

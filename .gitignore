@@ -1,5 +1,5 @@
 # бинарники
-spred
+/spred
 spred_new
 *.o
 # данные и результаты прогонов
@@ -22,3 +22,6 @@ __pycache__/
 # результаты экспериментов — коммитим
 !results/
 !results/**
+
+# incremental build and offline test artifacts
+build/
